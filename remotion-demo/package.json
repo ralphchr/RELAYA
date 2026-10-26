@@ -1,0 +1,27 @@
+{
+  "name": "relaya-remotion-demo",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "preview": "remotion studio src/index.tsx",
+    "render": "remotion render src/index.tsx RelayaDemo out/relaya-demo.mp4 --codec=h264 --pixel-format=yuv420p --crf=18 --concurrency=4",
+    "still": "remotion still src/index.tsx RelayaDemo out/preview.png --frame=285",
+    "typecheck": "tsc --noEmit",
+    "audio": "python scripts/make_audio.py",
+    "verify": "node scripts/verify.mjs"
+  },
+  "dependencies": {
+    "@remotion/cli": "4.0.538",
+    "@remotion/renderer": "4.0.538",
+    "lucide-react": "0.460.0",
+    "react": "18.3.1",
+    "react-dom": "18.3.1",
+    "remotion": "4.0.538"
+  },
+  "devDependencies": {
+    "@types/react": "18.3.12",
+    "@types/react-dom": "18.3.1",
+    "typescript": "5.7.2"
+  }
+}

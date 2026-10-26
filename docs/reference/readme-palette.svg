@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="150" viewBox="0 0 1280 150" role="img" aria-labelledby="title desc">
+  <title id="title">A little blush, a little peach, a lot of heart.</title>
+  <desc id="desc">Soft circles in Relaya's blush F3A6B5, peach F7D7A8, coral FF6B8B, cream FFF8F3, and sage 6FAF91, with a playful note.</desc>
+  <rect width="1280" height="150" rx="26" fill="#FFF8F3"/>
+  <g stroke="#FFFDF9" stroke-width="5"><circle cx="104" cy="75" r="33" fill="#F3A6B5"/><circle cx="155" cy="75" r="33" fill="#F7D7A8"/><circle cx="206" cy="75" r="33" fill="#FF6B8B"/><circle cx="257" cy="75" r="33" fill="#6FAF91"/></g>
+  <text x="382" y="87" font-family="'Plus Jakarta Sans', sans-serif" font-size="27" fill="#443A41">a little blush, a little peach, a lot of heart.</text>
+  <path d="M1150 88C1114 62 1136 40 1150 57C1164 40 1186 62 1150 88Z" fill="#F3A6B5"/>
+  <path d="M396 105Q663 116 923 103" stroke="#F3A6B5" stroke-width="3" stroke-linecap="round" fill="none"/>
+</svg>

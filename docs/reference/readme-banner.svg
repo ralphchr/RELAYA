@@ -1,0 +1,43 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="460" viewBox="0 0 1280 460" role="img" aria-labelledby="title desc">
+  <title id="title">RELAYA — a little help finding your words</title>
+  <desc id="desc">A pastel scrapbook of smiling speech bubbles, flowers, hearts, and sparkles in Relaya's blush, peach, and cream palette.</desc>
+  <defs>
+    <linearGradient id="paper" x2="1" y2="1"><stop stop-color="#FFF8F3"/><stop offset="1" stop-color="#FFFDF9"/></linearGradient>
+    <g id="flower"><g fill="#F3A6B5"><circle cy="-13" r="12"/><circle cx="12" cy="-4" r="12"/><circle cx="8" cy="11" r="12"/><circle cx="-8" cy="11" r="12"/><circle cx="-12" cy="-4" r="12"/></g><circle r="8" fill="#F7D7A8"/></g>
+    <path id="sparkle" d="M0-13Q2-2 13 0Q2 2 0 13Q-2 2-13 0Q-2-2 0-13Z" fill="#D79A4A"/>
+    <path id="heart" d="M0 8C-25-8-12-23 0-12C12-23 25-8 0 8Z" fill="#FF6B8B"/>
+  </defs>
+  <rect width="1280" height="460" rx="32" fill="url(#paper)"/>
+  <path d="M0 0H1280V19Q1260 43 1240 19Q1220 43 1200 19Q1180 43 1160 19Q1140 43 1120 19Q1100 43 1080 19Q1060 43 1040 19Q1020 43 1000 19Q980 43 960 19Q940 43 920 19Q900 43 880 19Q860 43 840 19Q820 43 800 19Q780 43 760 19Q740 43 720 19Q700 43 680 19Q660 43 640 19Q620 43 600 19Q580 43 560 19Q540 43 520 19Q500 43 480 19Q460 43 440 19Q420 43 400 19Q380 43 360 19Q340 43 320 19Q300 43 280 19Q260 43 240 19Q220 43 200 19Q180 43 160 19Q140 43 120 19Q100 43 80 19Q60 43 40 19Q20 43 0 19Z" fill="#F3A6B5" opacity=".55"/>
+  <rect x="22" y="51" width="1236" height="386" rx="25" fill="none" stroke="#F3A6B5" stroke-dasharray="3 8" stroke-linecap="round"/>
+  <ellipse cx="640" cy="291" rx="261" ry="91" fill="#F7D7A8" opacity=".12"/>
+  <g font-family="'Plus Jakarta Sans', sans-serif" text-anchor="middle">
+    <rect x="457" y="82" width="366" height="34" rx="17" fill="#F3A6B5" opacity=".28"/>
+    <text x="640" y="104" font-size="13" letter-spacing="2.5" fill="#7B6F76">YOUR LITTLE MEETING COMPANION</text>
+    <text x="640" y="240" font-family="Quicksand, sans-serif" font-size="128" font-weight="700" letter-spacing="6" fill="#443A41">RELAYA<tspan fill="#FF6B8B">.</tspan></text>
+    <path d="M466 263Q629 278 814 257" stroke="#F3A6B5" stroke-width="8" fill="none" stroke-linecap="round"/>
+    <text x="640" y="316" font-size="25" fill="#443A41">a little help finding your words.</text>
+    <text x="640" y="353" font-size="17" fill="#7B6F76">speak naturally · review your draft · share with confidence</text>
+    <text x="640" y="405" font-size="12" letter-spacing="2" fill="#7B6F76">MADE WITH CARE BY TEAM ANNERA</text>
+  </g>
+  <g transform="translate(168 235) rotate(-12)">
+    <path d="M-78-59H66Q87-59 87-37V37Q87 59 65 59H-24L-56 85L-53 59H-78Q-99 59-99 37V-37Q-99-59-78-59Z" fill="#F3A6B5"/>
+    <ellipse cx="-41" cy="20" rx="13" ry="7" fill="#FF6B8B" opacity=".4"/><ellipse cx="40" cy="20" rx="13" ry="7" fill="#FF6B8B" opacity=".4"/>
+    <path d="M-24-3V4M22-3V4M-10 17Q0 28 10 17" stroke="#443A41" stroke-width="5" stroke-linecap="round" fill="none"/>
+    <use href="#heart" transform="translate(54 -75) rotate(20) scale(.7)"/>
+  </g>
+  <g transform="translate(1104 269) rotate(10)">
+    <path d="M-63-51H63Q83-51 83-31V30Q83 50 63 50H48L53 73L20 50H-63Q-83 50-83 30V-31Q-83-51-63-51Z" fill="#F7D7A8"/>
+    <ellipse cx="-37" cy="17" rx="12" ry="6" fill="#F3A6B5"/><ellipse cx="37" cy="17" rx="12" ry="6" fill="#F3A6B5"/>
+    <path d="M-23-4V2M23-4V2M-9 15Q0 25 9 15" stroke="#443A41" stroke-width="4.5" stroke-linecap="round" fill="none"/>
+  </g>
+  <use href="#flower" transform="translate(306 109) rotate(12)"/>
+  <use href="#flower" transform="translate(955 365) rotate(-15) scale(.8)"/>
+  <use href="#flower" transform="translate(94 374) scale(.65)"/>
+  <use href="#sparkle" transform="translate(1000 118) scale(1.2)"/>
+  <use href="#sparkle" transform="translate(315 330) scale(.65)"/>
+  <use href="#sparkle" transform="translate(1182 126) scale(.65)"/>
+  <use href="#heart" transform="translate(924 202) rotate(18) scale(.65)"/>
+  <circle cx="374" cy="182" r="4" fill="#F7D7A8"/><circle cx="851" cy="115" r="4" fill="#F3A6B5"/>
+  <circle cx="267" cy="385" r="4" fill="#6FAF91"/><circle cx="1198" cy="383" r="4" fill="#F3A6B5"/>
+</svg>

@@ -1,0 +1,29 @@
+.tone-picker { position: relative; z-index: 1; display: inline-flex; min-width: 0; }
+.tone-picker.is-open { z-index: 20; }
+.tone-picker-trigger { display: inline-flex; min-width: 0; height: 38px; align-items: center; justify-content: space-between; gap: 8px; padding: 0 10px 0 14px; border: 1px solid var(--border); border-radius: var(--r-full); background: var(--surface); color: var(--text); font: inherit; font-size: 14px; font-weight: 700; white-space: nowrap; cursor: pointer; transition: border-color .18s ease, box-shadow .18s ease, background .18s ease; }
+.tone-picker-trigger .icon { width: 14px; height: 14px; flex: none; color: var(--text-2); transition: transform .18s ease, color .18s ease; }
+.tone-picker-trigger:hover, .tone-picker.is-open .tone-picker-trigger { border-color: var(--accent); }
+.tone-picker.is-open .tone-picker-trigger { background: #fffdfc; box-shadow: 0 0 0 3px color-mix(in srgb, var(--primary) 16%, transparent); }
+.tone-picker.is-open .tone-picker-trigger .icon { transform: rotate(180deg); color: var(--accent); }
+.tone-picker-trigger:focus-visible { outline: 3px solid color-mix(in srgb, var(--primary) 28%, transparent); outline-offset: 2px; }
+.tone-picker-menu { position: absolute; top: calc(100% + 7px); right: 0; z-index: 30; display: grid; min-width: 100%; gap: 4px; padding: 6px; border: 1px solid #f0d9d9; border-radius: 14px; background: var(--surface); box-shadow: 0 16px 32px rgba(68, 58, 65, .13), 0 3px 8px rgba(255, 107, 139, .10); transform-origin: top right; }
+.tone-picker-menu.is-opening { animation: tone-picker-in .34s cubic-bezier(.16,1.15,.3,1) both; }
+.tone-picker-menu.is-closing { pointer-events: none; animation: tone-picker-out .18s cubic-bezier(.4,0,1,1) both; }
+.tone-picker-option { display: flex; min-height: 37px; align-items: center; justify-content: space-between; gap: 16px; padding: 0 10px; border: 0; border-radius: 9px; background: transparent; color: var(--text); text-align: left; font: inherit; font-size: 13px; white-space: nowrap; cursor: pointer; opacity: 1; transition: background .18s ease, color .18s ease, transform .18s cubic-bezier(.2,.75,.25,1); }
+.tone-picker-menu.is-opening .tone-picker-option { opacity: 0; animation: tone-option-in .24s cubic-bezier(.2,.75,.25,1) both; }
+.tone-picker-menu.is-closing .tone-picker-option { animation: tone-option-out .12s ease-in both; }
+.tone-picker-option:nth-child(1) { animation-delay: .035s; }
+.tone-picker-option:nth-child(2) { animation-delay: .075s; }
+.tone-picker-option:hover, .tone-picker-option:focus-visible { outline: none; background: var(--primary-20); color: var(--accent); transform: translateX(2px); }
+.tone-picker-option[aria-selected="true"] { background: var(--primary-20); color: var(--accent); font-weight: 700; }
+.tone-picker-option .icon { width: 15px; height: 15px; flex: none; color: var(--accent); animation: tone-check-in .24s cubic-bezier(.2,.75,.25,1) both; }
+.tone-picker-setup .tone-picker-trigger { height: auto; padding: 0; border: 0; border-radius: 0; background: transparent; box-shadow: none; font-size: 14.5px; }
+.tone-picker-setup .tone-picker-trigger:hover, .tone-picker-setup.is-open .tone-picker-trigger { border-color: transparent; }
+.tone-picker-setup.is-open .tone-picker-trigger { background: transparent; box-shadow: none; }
+.tone-picker-setup .tone-picker-trigger:focus-visible { outline: 2px solid var(--accent); outline-offset: 3px; border-radius: 3px; }
+@keyframes tone-picker-in { 0% { opacity: 0; transform: translateY(-7px) scale(.96); } 72% { opacity: 1; transform: translateY(1px) scale(1.008); } 100% { opacity: 1; transform: translateY(0) scale(1); } }
+@keyframes tone-picker-out { from { opacity: 1; transform: translateY(0) scale(1); } to { opacity: 0; transform: translateY(-4px) scale(.98); } }
+@keyframes tone-option-in { from { opacity: 0; transform: translateY(-3px); } to { opacity: 1; transform: translateY(0); } }
+@keyframes tone-option-out { to { opacity: 0; transform: translateY(-2px); } }
+@keyframes tone-check-in { from { opacity: 0; transform: scale(.65) rotate(-12deg); } to { opacity: 1; transform: scale(1) rotate(0); } }
+@media (prefers-reduced-motion: reduce) { .tone-picker-menu, .tone-picker-option, .tone-picker-option .icon { animation: none; opacity: 1; } }

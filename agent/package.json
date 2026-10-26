@@ -1,0 +1,31 @@
+{
+  "name": "@relaya/agent",
+  "private": true,
+  "version": "0.1.0",
+  "type": "module",
+  "scripts": {
+    "dev": "node --env-file-if-exists=.env.local --import tsx src/dev.ts",
+    "lint": "eslint src",
+    "typecheck": "tsc --noEmit",
+    "test": "vitest run",
+    "build": "tsc --noEmit",
+    "try-join": "node --env-file-if-exists=.env.local --import tsx src/cli/try-join.ts",
+    "setup-account": "node --import tsx src/cli/setup-account.ts",
+    "say": "node --import tsx src/cli/say.ts",
+    "try-speak": "node --env-file-if-exists=.env.local --import tsx src/cli/try-speak.ts",
+    "voice-samples": "node --import tsx src/cli/voice-samples.ts"
+  },
+  "dependencies": {
+    "@hono/node-server": "^1.13.8",
+    "@relaya/agent-ticket": "workspace:*",
+    "@relaya/contracts": "workspace:*",
+    "@relaya/link-parser": "workspace:*",
+    "hono": "^4.6.16",
+    "kokoro-js": "1.2.1",
+    "playwright": "1.63.0"
+  },
+  "devDependencies": {
+    "tsx": "^4.19.2",
+    "vitest": "^2.1.8"
+  }
+}

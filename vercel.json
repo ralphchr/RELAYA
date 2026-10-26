@@ -1,0 +1,11 @@
+{
+  "buildCommand": "pnpm --filter @relaya/web build",
+  "outputDirectory": "frontend/dist",
+  "rewrites": [
+    { "source": "/api/(.*)", "destination": "/backend/src/index.ts" },
+    { "source": "/((?!api/).*)", "destination": "/frontend/index.html" }
+  ],
+  "functions": {
+    "backend/src/index.ts": { "runtime": "@vercel/node@5.3.0" }
+  }
+}

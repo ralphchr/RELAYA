@@ -1,0 +1,23 @@
+{
+  "name": "@relaya/backend",
+  "private": true,
+  "version": "0.1.0",
+  "type": "module",
+  "scripts": {
+    "dev": "node --env-file=.env.local --import tsx src/dev.ts",
+    "try:text": "node --env-file=.env.local --import tsx src/try-text.ts",
+    "lint": "eslint src",
+    "typecheck": "tsc --noEmit",
+    "test": "vitest run",
+    "build": "tsc --noEmit"
+  },
+  "dependencies": {
+    "@hono/node-server": "^1.13.8",
+    "@relaya/agent-ticket": "workspace:*",
+    "@relaya/contracts": "workspace:*",
+    "@relaya/link-parser": "workspace:*",
+    "@sentry/node": "10.76.0",
+    "hono": "^4.6.16"
+  },
+  "devDependencies": { "tsx": "^4.19.2", "vitest": "^2.1.8" }
+}

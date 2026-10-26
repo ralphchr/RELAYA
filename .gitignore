@@ -1,0 +1,22 @@
+node_modules
+.turbo
+dist
+coverage
+.env
+.env.*
+!.env.example
+.vercel
+
+# Agent debug screenshots
+agent/.debug
+agent/.profile
+agent/.audio
+
+# Local development tools
+.codex/
+.agents/
+.claude/
+.cursor/
+AGENTS.md
+CLAUDE.md
+*.log

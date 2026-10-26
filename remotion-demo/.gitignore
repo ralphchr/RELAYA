@@ -1,0 +1,5 @@
+node_modules/
+out/
+.remotion/
+.python/
+public/audio/*-raw.mp3

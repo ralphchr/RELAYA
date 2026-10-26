@@ -1,0 +1,49 @@
+/* Relaya design tokens. Source: FINAL RELAYA DEMO.html + Brand Kit.
+   Single light look; the brand has no dark theme. */
+:root {
+  color-scheme: light;
+
+  --primary: #F3A6B5;
+  --secondary: #F7D7A8;
+  --accent: #FF6B8B;
+  --bg-main: #FFF8F3;
+  --surface: #FFFDF9;
+  --positive: #6FAF91;
+  --warning: #D79A4A;
+  --error: #C96B73;
+  --border: #E9DCD8;
+  --text: #443A41;
+  --text-2: #7B6F76;
+
+  --primary-20: rgba(243, 166, 181, .20);
+  --primary-30: rgba(243, 166, 181, .30);
+  --secondary-30: rgba(247, 215, 168, .30);
+  --secondary-40: rgba(247, 215, 168, .40);
+  --positive-10: rgba(111, 175, 145, .10);
+  --positive-20: rgba(111, 175, 145, .20);
+  --positive-40: rgba(111, 175, 145, .40);
+  --diff-ink: #2D6A4F;
+  --highlight: rgba(215, 154, 74, .24);
+  --highlight-ink: #7A4E12;
+  --warn-ink: #8A5A1C;
+  --bg-main-60: rgba(255, 248, 243, .60);
+  --glass: rgba(255, 253, 249, .85);
+  --hero: linear-gradient(135deg, #FFF8F3 0%, #FFFDF9 50%, #F7D7A8 100%);
+
+  --font-ui: "Plus Jakarta Sans", ui-sans-serif, system-ui, -apple-system, "Segoe UI", sans-serif;
+  --font-mark: "Quicksand", "Plus Jakarta Sans", ui-rounded, sans-serif;
+
+  --r-lg: 8px;
+  --r-xl: 12px;
+  --r-2xl: 16px;
+  --r-3xl: 24px;
+  --r-full: 999px;
+
+  --sh-sm: 0 1px 2px rgba(68, 58, 65, .06);
+  --sh-md: 0 4px 6px -1px rgba(68, 58, 65, .10), 0 2px 4px -2px rgba(68, 58, 65, .08);
+  --sh-lg: 0 10px 15px -3px rgba(68, 58, 65, .10), 0 4px 6px -4px rgba(68, 58, 65, .08);
+  --sh-xl: 0 20px 25px -5px rgba(68, 58, 65, .12), 0 8px 10px -6px rgba(68, 58, 65, .08);
+
+  --sidebar-w: 300px;
+  --sidebar-rail: 72px;
+}

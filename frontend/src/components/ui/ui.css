@@ -1,0 +1,43 @@
+/* Shared primitives used by every feature. Feature CSS lives next to the feature. */
+.icon { width: 20px; height: 20px; flex: none; }
+
+.btn { display: inline-flex; align-items: center; justify-content: center; gap: 10px; height: 52px; padding: 0 22px; border-radius: var(--r-full); font-weight: 700; font-size: 16px; white-space: nowrap; transition: transform .15s, box-shadow .15s, opacity .15s; }
+.btn:not(:disabled):hover { transform: translateY(-1px); }
+.btn-coral { background: var(--accent); color: #fff; box-shadow: var(--sh-md); }
+.btn-green { background: var(--positive); color: #fff; box-shadow: var(--sh-md); }
+.btn-ghost { background: var(--surface); border: 1px solid var(--border); color: var(--text); box-shadow: var(--sh-sm); }
+.btn-sm { height: 40px; padding: 0 16px; font-size: 14.5px; gap: 7px; }
+.btn:disabled { opacity: .45; box-shadow: none; filter: saturate(.6); }
+
+.icon-btn { width: 52px; height: 52px; flex: none; border-radius: 50%; background: var(--surface); border: 1px solid var(--border); color: var(--text); display: grid; place-items: center; box-shadow: var(--sh-sm); }
+.icon-btn.sm { width: 40px; height: 40px; }
+.icon-btn.danger { color: var(--error); }
+
+.chip { display: inline-flex; align-items: center; gap: 6px; height: 28px; padding: 0 12px; border-radius: var(--r-full); font-size: 13px; font-weight: 700; white-space: nowrap; }
+.chip .icon { width: 15px; height: 15px; }
+.chip-pink { background: var(--primary-20); color: var(--accent); }
+.chip-green { background: var(--positive-20); color: var(--diff-ink); }
+.chip-line { background: var(--surface); border: 1px solid var(--border); color: var(--text); font-weight: 600; }
+.chip-warn { background: var(--secondary-40); border: 1px solid var(--secondary); color: var(--warn-ink); }
+
+.mode-pill { display: inline-flex; align-items: center; gap: 6px; height: 38px; padding: 0 12px; border-radius: var(--r-full); background: var(--primary-20); color: var(--accent); font-size: 14.5px; font-weight: 800; white-space: nowrap; }
+.mode-pill .icon { width: 16px; height: 16px; }
+
+.wave { display: inline-flex; align-items: center; gap: 4px; height: 22px; }
+.wave i { width: 4px; border-radius: 2px; background: currentColor; }
+.wave.live i { animation: pulse 1s ease-in-out infinite; }
+.wave.live i:nth-child(2n) { animation-delay: .2s; }
+.wave.live i:nth-child(3n) { animation-delay: .4s; }
+
+.spinner { width: 52px; height: 52px; border-radius: 50%; border: 5px solid var(--primary-30); border-top-color: var(--accent); animation: spin 1s linear infinite; flex: none; }
+
+.brand { display: inline-flex; align-items: center; gap: 10px; }
+.brand-logo { display: block; object-fit: contain; flex: none; }
+.wordmark { font-family: var(--font-mark); font-weight: 500; letter-spacing: .32em; color: var(--accent); font-size: 20px; }
+
+.empty-state { display: grid; justify-items: center; gap: 10px; padding: 64px 24px; text-align: center; color: var(--text-2); }
+.empty-state h2 { margin: 0; color: var(--text); font-size: 24px; font-weight: 800; }
+.empty-state p { margin: 0; max-width: 420px; line-height: 1.5; }
+
+.info-note { display: flex; gap: 10px; align-items: flex-start; padding: 12px 14px; border-radius: 14px; background: var(--positive-10); border: 1px solid var(--positive-40); font-size: 15px; line-height: 1.45; }
+.info-note .icon { color: var(--positive); margin-top: 1px; }

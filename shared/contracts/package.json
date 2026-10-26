@@ -1,0 +1,15 @@
+{
+  "name": "@relaya/contracts",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "exports": { ".": "./src/index.ts" },
+  "scripts": {
+    "lint": "eslint src",
+    "typecheck": "tsc --noEmit",
+    "test": "vitest run",
+    "build": "tsc -p tsconfig.build.json"
+  },
+  "dependencies": { "zod": "^3.24.1" },
+  "devDependencies": { "vitest": "^2.1.8" }
+}

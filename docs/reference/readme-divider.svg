@@ -1,0 +1,4 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="52" viewBox="0 0 1280 52" role="img" aria-label="A little flower between two dotted pink lines">
+  <path d="M180 26H586M694 26H1100" stroke="#F3A6B5" stroke-width="2" stroke-dasharray="2 10" stroke-linecap="round"/>
+  <g transform="translate(640 26)"><g fill="#F3A6B5"><circle cy="-10" r="9"/><circle cx="10" cy="-3" r="9"/><circle cx="6" cy="9" r="9"/><circle cx="-6" cy="9" r="9"/><circle cx="-10" cy="-3" r="9"/></g><circle r="6" fill="#F7D7A8"/></g>
+</svg>

@@ -1,0 +1,5 @@
+packages:
+  - "frontend"
+  - "shared/*"
+  - "backend"
+  - "agent"
