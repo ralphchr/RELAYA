@@ -24,7 +24,7 @@ Speak in the language that feels like you. Relaya helps turn your thoughts into 
 
 <p align="center">
   <strong>Tagalog · Bisaya · English · Japanese · Mandarin · Spanish</strong><br />
-  <sub>your words in → a little clarity → English out</sub>
+  <sub>your words in - a little clarity - English out</sub>
 </p>
 
 <p align="center">
@@ -186,4 +186,4 @@ Once it’s ready, choose **Speak for me**, paste your Meet link, and admit Rela
 
 ![A little blush, a little peach, a lot of heart.](docs/reference/readme-palette.png)
 
-<p align="center"><sub>take your time. find your words. we’re here to help. ♡</sub></p>
+<p align="center"><sub>mean it. control it. relay it. ♡</sub></p>
