@@ -23,13 +23,15 @@
   <g transform="translate(168 235) rotate(-12)">
     <path d="M-78-59H66Q87-59 87-37V37Q87 59 65 59H-24L-56 85L-53 59H-78Q-99 59-99 37V-37Q-99-59-78-59Z" fill="#F3A6B5"/>
     <ellipse cx="-41" cy="20" rx="13" ry="7" fill="#FF6B8B" opacity=".4"/><ellipse cx="40" cy="20" rx="13" ry="7" fill="#FF6B8B" opacity=".4"/>
-    <path d="M-24-3V4M22-3V4M-10 17Q0 28 10 17" stroke="#443A41" stroke-width="5" stroke-linecap="round" fill="none"/>
+    <path id="blush-eyes" d="M-24-3V4M22-3V4" stroke="#443A41" stroke-width="5" stroke-linecap="round" fill="none"/>
+    <path d="M-10 17Q0 28 10 17" stroke="#443A41" stroke-width="5" stroke-linecap="round" fill="none"/>
     <use href="#heart" transform="translate(54 -75) rotate(20) scale(.7)"/>
   </g>
   <g transform="translate(1104 269) rotate(10)">
     <path d="M-63-51H63Q83-51 83-31V30Q83 50 63 50H48L53 73L20 50H-63Q-83 50-83 30V-31Q-83-51-63-51Z" fill="#F7D7A8"/>
     <ellipse cx="-37" cy="17" rx="12" ry="6" fill="#F3A6B5"/><ellipse cx="37" cy="17" rx="12" ry="6" fill="#F3A6B5"/>
-    <path d="M-23-4V2M23-4V2M-9 15Q0 25 9 15" stroke="#443A41" stroke-width="4.5" stroke-linecap="round" fill="none"/>
+    <path id="peach-eyes" d="M-23-4V2M23-4V2" stroke="#443A41" stroke-width="4.5" stroke-linecap="round" fill="none"/>
+    <path d="M-9 15Q0 25 9 15" stroke="#443A41" stroke-width="4.5" stroke-linecap="round" fill="none"/>
   </g>
   <use href="#flower" transform="translate(306 109) rotate(12)"/>
   <use href="#flower" transform="translate(955 365) rotate(-15) scale(.8)"/>

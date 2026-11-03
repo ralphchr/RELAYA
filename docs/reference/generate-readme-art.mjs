@@ -31,6 +31,13 @@ const motion = `
   @media(prefers-reduced-motion:reduce){.float,.twinkle,.wave,.shine,.bloom{animation:none}.shine{display:none}}
 `;
 
+const blinking = `
+  .blink{animation:blink 6.4s ease-in-out infinite;transform-box:fill-box;transform-origin:center}
+  .blink-late{animation-duration:7.4s;animation-delay:-2.1s}
+  @keyframes blink{0%,42%,46%,100%{transform:scaleY(1)}44%{transform:scaleY(.08)}}
+  @media(prefers-reduced-motion:reduce){.blink{animation:none}}
+`;
+
 const showcase = `<svg xmlns="http://www.w3.org/2000/svg" width="1120" height="260" viewBox="0 0 1120 260" role="img" aria-labelledby="title desc">
   <title id="title">Step inside the Relaya showcase</title>
   <desc id="desc">A little peek into our world. Meet RELAYA, made by Team ANNERA.</desc>
@@ -124,7 +131,9 @@ try {
 
       if (kind === "banner") {
         const desc = root.querySelector("desc");
-        desc.textContent = "RELAYA in Quicksand with a gentle title shine, floating speech bubbles, and twinkling flowers. Made by Team ANNERA. Motion pauses when reduced motion is requested.";
+        desc.textContent = "RELAYA in Quicksand with a gentle title shine, floating speech bubbles with blinking eyes, and twinkling flowers. Made by Team ANNERA. Motion pauses when reduced motion is requested.";
+        wrap(root.querySelector("#blush-eyes"), "blink");
+        wrap(root.querySelector("#peach-eyes"), "blink blink-late");
         for (const [i, node] of [...root.querySelectorAll(':scope>g[transform^="translate("]')].entries()) wrap(node, i ? "float float-late" : "float");
         for (const [i, node] of [...root.querySelectorAll(':scope>use[href="#sparkle"],:scope>use[href="#heart"]')].entries()) wrap(node, "twinkle", -i * 1.2);
         root.querySelectorAll(':scope>use[href="#flower"]').forEach((node, i) => wrap(node, "bloom", -i * 2));
@@ -147,7 +156,7 @@ try {
         const heart = root.querySelector('path[fill="#F3A6B5"]'); if (heart) wrap(heart, "float");
       }
       return root.outerHTML;
-    }, { kind, typography, titleMask, motion, width, height });
+    }, { kind, typography, titleMask, motion: kind === "banner" ? motion + blinking : motion, width, height });
     await fs.writeFile(new URL(output, directory), `${result.replace(/[\t ]+$/gm, "")}\n`);
     console.log(`Built ${fileURLToPath(new URL(output, directory))}`);
   }
