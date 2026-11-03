@@ -2,7 +2,10 @@
   <img src="frontend/public/assets/relaya-logo.png" alt="Relaya" width="60" />
 </p>
 
-![RELAYA — a little help finding your words.](docs/reference/readme-banner.png)
+<picture>
+  <source media="(prefers-reduced-motion: reduce)" srcset="docs/reference/readme-banner.png" />
+  <img src="docs/reference/readme-hero.svg" alt="RELAYA — a little help finding your words. A soft title shine, floating speech bubbles, and pastel sparkles." width="1280" />
+</picture>
 
 <p align="center">
   <strong>Your thoughts deserve to be heard. Let’s find the words together. ♡</strong>
@@ -28,9 +31,15 @@ Speak in the language that feels like you. Relaya helps turn your thoughts into 
 </p>
 
 <p align="center">
-  <img src="docs/reference/readme-say.png" alt="Say it yourself — a little help with the words. You bring your own voice." width="340" />
+  <picture>
+    <source media="(prefers-reduced-motion: reduce)" srcset="docs/reference/readme-say.png" />
+    <img src="docs/reference/readme-say-animated.svg" alt="Say it yourself — a little help with the words. You bring your own voice." width="340" />
+  </picture>
   &nbsp;
-  <img src="docs/reference/readme-speak.png" alt="Speak for me — review it, approve it, and let Relaya say it for you in Google Meet." width="340" />
+  <picture>
+    <source media="(prefers-reduced-motion: reduce)" srcset="docs/reference/readme-speak.png" />
+    <img src="docs/reference/readme-speak-animated.svg" alt="Speak for me — review it, approve it, and let Relaya say it for you in Google Meet." width="340" />
+  </picture>
 </p>
 
 <p align="center">✦ casual or professional &nbsp; ✦ familiar names remembered &nbsp; ✦ every draft is yours to review</p>
@@ -42,6 +51,15 @@ Speak in the language that feels like you. Relaya helps turn your thoughts into 
 <p align="center">
   <strong>A little peek into our world. ♡</strong><br />
   Take a look around, meet Relaya, and see what we’ve been making.
+</p>
+
+<p align="center">
+  <a href="https://relaya-showcase.vercel.app/">
+    <picture>
+      <source media="(prefers-reduced-motion: reduce)" srcset="docs/reference/readme-showcase.png" />
+      <img src="docs/reference/readme-showcase.svg" alt="Step inside the Relaya showcase — meet the idea, explore the experience. Made by Team ANNERA." width="900" />
+    </picture>
+  </a>
 </p>
 
 <p align="center">
@@ -184,6 +202,9 @@ Once it’s ready, choose **Speak for me**, paste your Meet link, and admit Rela
   <a href="agent/README.md">meeting companion</a>
 </p>
 
-![A little blush, a little peach, a lot of heart.](docs/reference/readme-palette.png)
+<picture>
+  <source media="(prefers-reduced-motion: reduce)" srcset="docs/reference/readme-palette.png" />
+  <img src="docs/reference/readme-footer-animated.svg" alt="A little blush, a little peach, a lot of heart." width="1280" />
+</picture>
 
 <p align="center"><sub>mean it. control it. relay it. ♡</sub></p>
